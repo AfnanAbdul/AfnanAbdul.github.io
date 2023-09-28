@@ -1,0 +1,49 @@
+/* Reset some default styles to ensure consistency */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply the black background */
+body {
+    background-color: #000;
+    font-family: Calibri, sans-serif;
+    color: #D7D7D7;
+}
+
+/* Style the header */
+header {
+    background-color: transparent; /* Transparent background */
+}
+
+/* Create a flex container for title and tagline */
+#header-content {
+    display: flex;
+    flex-direction: row; /* Align to the left by default */
+    align-items: center; /* Vertically center align the content */
+}
+
+/* Style the site title (your name) */
+#title {
+    font-weight: bold;
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+/* Style the site tagline */
+#tagline {
+    font-size: 18px;
+    margin-left: 10px; /* Add some spacing between title and tagline */
+}
+
+/* Center content in the main section */
+main {
+    text-align: left;
+    padding: 20px;
+}
+
+/* Center content in the footer */
+footer {
+    text-align: left;
+    padding: 10px;
+}
