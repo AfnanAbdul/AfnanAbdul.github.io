@@ -14,6 +14,7 @@ body {
 /* Style the header */
 header {
     background-color: transparent; /* Transparent background */
+    padding-top: 24px;
 }
 
 /* Create a flex container for title and tagline */
