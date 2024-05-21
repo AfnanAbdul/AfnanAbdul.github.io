@@ -42,6 +42,16 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Specific rule for the h1 under main.container */
+main.container h1 {
+    font-weight: bold;
+    font-size: 6rem;
+}
+main.container h2 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
 header {
     background-color: #1f1f1f; /* Slightly lighter dark for header */
     color: #ffffff;
@@ -61,6 +71,7 @@ header {
     align-items: baseline;
     text-decoration: none;
     color: #ffffff;
+    cursor: pointer; /* Ensure cursor indicates it's clickable */
 }
 
 .nav-left .name {
@@ -127,13 +138,45 @@ main {
     background-color: var(--secondary-bg);
 }
 
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Adjust spacing between the image and the text */
+}
+
+.profile-pic {
+    border-radius: 0;
+    border: 3px solid #ffffff; /* White border */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.text-content {
+    max-width: calc(100% - 220px); /* Adjust based on profile-pic width + gap */
+}
+
 footer {
     background-color: var(--secondary-bg);
     color: var(--main-text);
-    text-align: center;
-    padding: 1rem;
+    padding: 1rem 2rem;
     position: relative;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+footer .copyright {
+    margin: 0;
 }
 
 .social-links a {
