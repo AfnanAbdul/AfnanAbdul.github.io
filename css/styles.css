@@ -81,7 +81,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #00A8E8; /* Accent color */
+    color: #bfc0c0; /* Accent color */
     text-decoration: none;
     padding: 0.5rem 1rem;
     transition: background-color 0.3s;
