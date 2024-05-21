@@ -51,9 +51,25 @@ header {
     top: 0;
     z-index: 1000;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+}
+
+.nav-left {
+    display: flex;
+    align-items: baseline;
+}
+
+.nav-left .name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.nav-left .title {
+    font-size: 0.9rem;
+    color: #aaaaaa; /* Light Gray for secondary text */
 }
 
 nav ul {
