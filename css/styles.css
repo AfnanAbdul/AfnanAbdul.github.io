@@ -51,7 +51,7 @@ header {
     top: 0;
     z-index: 1000;
     display: flex;
-    justify-content: space-between; /* Space between Home and other items */
+    justify-content: center;
     align-items: center;
     box-sizing: border-box;
 }
@@ -61,13 +61,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    flex: 1;
-    justify-content: flex-end; /* Align the other items to the right */
-    gap: 1rem; /* Adjust spacing between menu items */
-}
-
-nav ul .home {
-    margin-right: auto; /* Push the Home link to the left */
+    gap: 2rem;
 }
 
 nav ul li a {
@@ -81,6 +75,27 @@ nav ul li a:hover {
     background-color: #333333;
 }
 
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
 main {
     padding: 6rem 2rem 2rem; /* Adjusted for fixed header */
     box-sizing: border-box;
@@ -89,11 +104,14 @@ main {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 2rem;
+    box-sizing: border-box;
+    background-color: var(--secondary-bg);
 }
 
 footer {
-    background-color: #1f1f1f;
-    color: white;
+    background-color: var(--secondary-bg);
+    color: var(--main-text);
     text-align: center;
     padding: 1rem;
     position: relative;
@@ -101,14 +119,14 @@ footer {
 }
 
 .social-links a {
-    color: #00A8E8; /* Accent color */
+    color: var(--accent-color);
     margin: 0 0.5rem;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .social-links a:hover {
-    color: #bbb;
+    color: var(--secondary-text);
 }
 
 .profile-pic {
@@ -126,7 +144,7 @@ footer {
 }
 
 .project, .blog-post {
-    background-color: #1f1f1f;
+    background-color: var(--secondary-bg);
     padding: 1rem;
     border-radius: 5px;
     flex: 1 1 calc(33.333% - 1rem);
