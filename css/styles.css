@@ -1,6 +1,6 @@
 /* styles.css */
 
-/* Reset and base styles */
+/* Base styles and reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,19 +27,25 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Other styles */
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #121212; /* Dark background */
     color: #ffffff; /* Light text color */
     margin: 0;
     padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 header {
     background-color: #1f1f1f; /* Slightly lighter dark for header */
     color: #ffffff;
-    padding: 1rem;
+    padding: 1rem 2rem;
     position: fixed;
     width: 100%;
     top: 0;
@@ -48,7 +54,6 @@ header {
     justify-content: space-between; /* Space between Home and other items */
     align-items: center;
     box-sizing: border-box;
-    padding: 1rem 2rem; /* Add margin around the edges */
 }
 
 nav ul {
@@ -66,7 +71,7 @@ nav ul .home {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #00A8E8; /* Accent color */
     text-decoration: none;
     padding: 0.5rem 1rem;
     transition: background-color 0.3s;
@@ -96,7 +101,7 @@ footer {
 }
 
 .social-links a {
-    color: white;
+    color: #00A8E8; /* Accent color */
     margin: 0 0.5rem;
     text-decoration: none;
     transition: color 0.3s;
@@ -144,15 +149,4 @@ footer {
         width: 100px;
         height: 100px;
     }
-}
-
-/* In your styles.css */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
-
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
 }
