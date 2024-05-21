@@ -45,8 +45,10 @@ header {
     top: 0;
     z-index: 1000;
     display: flex;
-    justify-content: flex-end; /* Align items to the right */
+    justify-content: space-between; /* Space between Home and other items */
     align-items: center;
+    box-sizing: border-box;
+    padding: 1rem 2rem; /* Add margin around the edges */
 }
 
 nav ul {
@@ -54,7 +56,13 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    flex: 1;
+    justify-content: flex-end; /* Align the other items to the right */
     gap: 1rem; /* Adjust spacing between menu items */
+}
+
+nav ul .home {
+    margin-right: auto; /* Push the Home link to the left */
 }
 
 nav ul li a {
@@ -70,6 +78,7 @@ nav ul li a:hover {
 
 main {
     padding: 6rem 2rem 2rem; /* Adjusted for fixed header */
+    box-sizing: border-box;
 }
 
 .container {
