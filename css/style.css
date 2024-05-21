@@ -1,25 +1,113 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
     margin: 0;
     padding: 0;
 }
+
 header {
-    background-color: #333;
-    color: white;
+    background-color: #1f1f1f; /* Slightly lighter dark for header */
+    color: #ffffff;
     padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
 }
-nav ul li {
-    display: inline;
-    margin-right: 1rem;
-}
+
 nav ul li a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
 }
+
+nav ul li a:hover {
+    background-color: #333333;
+}
+
 main {
-    padding: 2rem;
+    padding: 6rem 2rem 2rem; /* Adjusted for fixed header */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #bbb;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+}
+
+.projects, .blogs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.project, .blog-post {
+    background-color: #1f1f1f;
+    padding: 1rem;
+    border-radius: 5px;
+    flex: 1 1 calc(33.333% - 1rem);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.project:hover, .blog-post:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .projects, .blogs {
+        flex-direction: column;
+    }
+    .project, .blog-post {
+        flex: 1 1 100%;
+    }
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.project:hover, .blog-post:hover {
+    transform: translateY(-5px);
 }
